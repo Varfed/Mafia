@@ -536,6 +536,7 @@ const embed = new Discord.RichEmbed()
    .setThumbnail(message.guild.iconURL)
 message.channel.send({embed});
 }
+    
     if(cmd === `${prefix}botstatus`){
     
         let embed = new Discord.RichEmbed()
@@ -544,6 +545,8 @@ message.channel.send({embed});
         .addField("Перезагрузка", "15.06.19")
         .addField("Версия", "1.5.2")
         .addField("Имя", "Mafia")
+        
+        return message.channel.send(embed)
     
     }
 if(cmd === `${prefix}8ball` || cmd === `${prefix}8b`){

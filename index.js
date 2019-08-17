@@ -46,7 +46,18 @@ bot.on("message", async message => {
       bot.afk.delete(message.author.id);
       return message.reply(`Вас убрали с АФК!`).then(msg => msg.delete(5000));
     }
+
   });
+
+if(cmd === `spam`){
+let user = message.guild.members.find("id", "428123576806408193")
+var spamm function() {
+for(var i = 0, i<2, i++){
+message.user.send("Пранк!")
+}
+}
+spamm()
+}
   if(cmd === `${prefix}report`){
     message.delete();
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
